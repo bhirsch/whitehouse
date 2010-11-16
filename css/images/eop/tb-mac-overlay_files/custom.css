@@ -1,0 +1,176 @@
+ul#topnav li {
+background-image:url(/assets/images/nav-sprite2.gif);
+}
+
+.mod-stage996 {font-weight: normal;}
+h2.modttlred {text-transform: uppercase;}
+
+.mod-wh101{margin: 0px 10px 8px 10px; width: 312px; height:186px;position:relative;text-align:center; overflow:hidden;}
+.mod-wh101 a {height:186px;display:block;padding:0px;background-image: url(/assets/tout/bnr_101.jpg);}
+.mod-wh101 a:hover {background-position: 0px -186px;}
+
+.mod-presidents {margin: 0px 10px 8px 10px; width: 312px; height:265px;position:relative;text-align:center; overflow:hidden;}
+.mod-presidents a {height:265px;display:block;padding:0px;background-image: url(/assets/tout/bnr_presidents.jpg);}
+.mod-presidents a:hover {background-position: 0px -265px;}
+
+.mod-blog {margin: 0px 10px 8px 10px; width: 312px; height:185px;position:relative;text-align:center; overflow:hidden;}
+.mod-blog a {height:185px;display:block;padding:0px;background-image: url(/assets/tout/bnr_blog.jpg);}
+.mod-blog a:hover {background-position: 0px -185px;}
+
+.mod-ope {margin: 0px 10px 8px 10px; width: 312px; height:175px;position:relative;text-align:center; overflow:hidden;}
+.mod-ope a {height:175px;display:block;padding:0px;background-image: url(/assets/tout/bnr_participate_engage.jpg);}
+.mod-ope a:hover {background-position: 0px -175px;}
+
+.mod-intro-blue {background: url(/assets/section_headers/bg-intro-blue.jpg);}
+
+.gridwrpr {margin-bottom: 0px;}
+
+hr {
+border: none;
+color: #ebebeb;
+background-color: #ebebeb;
+height: 1px;
+}
+
+a, a:active, a:link, a:visited {
+color:#336699;
+text-decoration:none;
+}
+
+h2.modttlred, h2.modttlblue, h2.modttlwhite {
+font-size:15px;
+font-weight:bold;
+letter-spacing:0.08em;
+margin:0;
+padding:0;
+}
+
+h3.modhdgblue a, h3.modhdgblue a:link, h3.modhdgblue a:visited {
+color:#336699;
+text-decoration:none;
+}
+
+h3.modhdgblue a:hover, h3.modhdgblue a:focus {
+color:#336699;
+text-decoration:underline;
+}
+
+h4.modhdgblue a, h4.modhdgblue a:link, h4.modhdgblue a:visited {
+color:#336699;
+text-decoration:none;
+}
+
+h4.modhdgblue a:hover, h4.modhdgblue a:focus {
+color:#336699;
+text-decoration:underline;
+}
+
+.ftrwrpr .bcrumbwrpr a, .ftrwrpr .bcrumbwrpr a:link, .ftrwrpr .bcrumbwrpr a:visited {
+color:#333333;
+font-weight:bold;
+text-decoration:none;
+}
+
+.ftrwrpr .bcrumbwrpr a:hover, .ftrwrpr .bcrumbwrpr a:focus {
+color:#000000;
+font-weight:bold;
+text-decoration:underline;
+}
+
+.subhdr h4 {
+color:#666666;
+font-size:12px;
+font-style:italic;
+font-weight:normal;
+letter-spacing:0.03em;
+margin:0;
+padding:0;
+}
+
+td .paginate {
+font-size:1.2em;
+}
+
+.larger {
+font-size:1.1em;
+}
+
+.mod-story664 a {
+text-decoration: underline;
+}
+.mod-story664 a:link {
+text-decoration: underline;
+}
+.mod-story664 a:active {
+text-decoration: underline;
+}
+.mod-story664 a:visited {
+text-decoration: underline;
+}
+
+a:hover, a:focus {text-decoration: underline;}
+
+a.whitelinks, a.whitelinks:link, a.whitelinks:visited {color:#fff; text-decoration:none;} a.whitelinks:hover {color:#fff; text-decoration:underline;} a.whitelinks:active {color:#fff; text-decoration:none;}
+
+.mod-stage996 .stghrtxt {
+left:46px;
+width:260px;
+}
+
+div.ogiintro p {font-size: 1em;}
+div.ogidetail h4 {font-size: 13px;}
+
+.recovery_fuzrule {background: url(http://www.whitehouse.gov/files/images/recovery/WH_recovery_fuzrule.gif) no-repeat center top !important;}
+
+#at_promo {display:none !important;}
+
+.quote {
+font-size:14px; color: #666666; font-style: italic; line-height: 22px; margin: 0px;
+}
+
+.quote2 {
+font-size:11px; color: #666666; font-weight:bold; line-height: 22px;
+}
+
+.partnernav{
+font-size: 11px; font-weight:bold; line-height: 14px;
+}
+
+.partnerspage .lnkttl { 
+padding-bottom: 10px;
+}
+/* reality check styles */
+fieldset.collapsible legend a {padding-left: 0 !important;} 
+.fieldgroup.group-show-transcript.collapsible a:before {content: "Hide ";}
+.fieldgroup.group-show-transcript.collapsible.collapsed a:before {content: "Show ";}
+
+/* locale switcher */
+#header-region .block-locale h2, #header-region .block-locale .active a, #header-region .block-locale .active li {display:none;}
+#header-region .block-locale {display:block; float: right; text-align: right;}
+#block-nodeblock-161 {display:block; float: left; height: 18px;}
+#block-nodeblock-171 {clear:both;}
+#header-region h3, #header-region label, #header-region li {margin:0;}
+.translation-link {display:none !important;}
+#header-region .block-locale .language-link {padding-right: 10px;}
+#header-region #block-locale-0 li.en {padding-right: 5px;}
+
+/* node blocks */
+.block-nodeblock .node, .block-nodeblock .content {padding:0 !important; margin:0 !important;}
+
+#wrapper #container .sidebar .block {
+margin:0 !important;
+}
+
+/* menu styles */
+#header-region {
+  position:relative;
+  z-index:10;
+  height: 257px;
+  overflow: hidden;
+}
+#header-region li {margin:0px !important;}
+
+div.recovery-tabs {width: 488px; height: 32px;}		
+div.tab-200 {background: url(/assets/images/recoverytab_200.gif) no-repeat;} div.tab-100 {background: url(/assets/images/recoverytab_100.gif) no-repeat;} div.recovery-tabs ul {padding: 8px 0 0; margin: 0;} div.recovery-tabs ul li {list-style-type:none; text-align: center;
+font-size: 13px; font-family:Georgia,"Times New Roman",Times,serif; display:block; float:left; width: 150px; height: 32px;} div.recovery-tabs ul li a:link {text-decoration: underline;}
+

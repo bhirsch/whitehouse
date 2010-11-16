@@ -1,0 +1,81 @@
+var counter = 1;
+var fromId = '';
+
+jQuery(document).ready(function() {
+    $("a").each(function() {
+        var $a = jQuery(this);
+        var href = this.href;
+
+        // strip the host name down, removing subdomains or www
+        var host = window.location.host.replace(/^(([^\/]+?\.)*)([^\.]{4,})((\.[a-z]{1,4})*)$/, '$3$4');
+
+        //if (this.href != null) {
+        //}
+
+        if (this.href != null && !$a.is(".exempt")) {
+            if ((this.href.match(/^http/)) && (!this.href.match(host)) && (!this.href.match(/^javascript/))) {
+                $a.addClass('thickbox').addClass('external');
+                $a.attr('href', '#TB_inline?height=220&width=370&inlineId=tb_external&linkId=' + counter);
+                $a.attr('id', 'tb_external' + counter);
+                tb_init('a.thickbox');
+                counter = counter + 1
+                //alert(href);
+
+                // on click, add external link code to the thickbox
+                $a.click(function() {
+                    jQuery('#tb_external_thelink')
+                   .before('<p id="tb_external_thelink"><a href="' + href + '" id="tb_thelink">' + href + '</a></p>')
+                   .remove();
+                    document.getElementById("tb_thelink").focus();
+                    fromId = $(this).attr("id");
+                    redirect_path = 'document.location="' + href + '"'
+                    setTimeout("AutoRedirect()", 5000);
+                });
+            }
+        }
+    });
+});
+
+
+jQuery(document).ready(function() {
+    $("area").each(function() {
+        var $a = jQuery(this);
+        var href = this.href;
+
+        // strip the host name down, removing subdomains or www
+        var host = window.location.host.replace(/^(([^\/]+?\.)*)([^\.]{4,})((\.[a-z]{1,4})*)$/, '$3$4');
+
+        //if (this.href != null) {
+        //}
+
+        if (this.href != null && !$a.is(".exempt")) {
+            if ((this.href.match(/^http/)) && (!this.href.match(host)) && (!this.href.match(/^javascript/))) {
+                $a.addClass('thickbox').addClass('external');
+                $a.attr('href', '#TB_inline?height=220&width=370&inlineId=tb_external');
+                $a.attr('id', 'tb_external' + counter);
+                tb_init('area.thickbox');
+                counter = counter + 1
+                //alert(href);
+
+                // on click, add external link code to the thickbox
+                $a.click(function() {
+                    jQuery('#tb_external_thelink')
+                   .before('<p id="tb_external_thelink"><a onclick="document.getElementById(\'TB_closeWindowButton\').click()" target="_blank" href="' + href + '" id="tb_thelink">' + href + '</a></p>')
+                   .remove();
+                    document.getElementById("tb_thelink").focus();
+                    fromId = $(this).attr("id");
+                    redirect_path = 'document.location="' + href + '"'
+                    setTimeout("AutoRedirect()", 5000);
+                });
+            }
+        }
+    });
+});
+
+function AutoRedirect() 
+{   
+    if (redirect_path != '')
+    {
+        eval(redirect_path);
+    }
+}

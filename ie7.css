@@ -1,0 +1,9 @@
+ /* This makes sws ngp subscribe block appear correctly in header. */
+  .block-crmngp 
+  { 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    right: 20px; 
+  }
+
