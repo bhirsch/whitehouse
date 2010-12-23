@@ -140,9 +140,11 @@
     <br />
   </div>
   <div class="hdremblem">
-    <a href="<?php print $front_page; ?>">
-    <img src="<?php print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
+    <!--
+    <a href="<?php //print $front_page; ?>">
+    <img src="<?php //print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
     <br />
+    -->
   </div>
   <div class="hdrflag">
     <a href="<?php print $front_page; ?>">
