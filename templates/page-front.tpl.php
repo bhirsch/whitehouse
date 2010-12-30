@@ -142,13 +142,13 @@
   <div class="hdremblem">
     <!--
     <a href="<?php //print $front_page; ?>">
-    <img src="<?php //print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
+    <img src="<?php //print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
     <br />
     -->
   </div>
   <div class="hdrflag">
     <a href="<?php print $front_page; ?>">
-    <img src="<?php print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/hdr-usa-flag.gif" alt="<?php print $site_name; ?>" /></a>
+    <img src="<?php print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/hdr-usa-flag.gif" alt="<?php print $site_name; ?>" /></a>
     <br />
   </div>
   <div class="hdrupdtwrpr">
@@ -159,7 +159,7 @@
             <tr>
                 <td><input name="ctl03$txtHeaderEmail" type="text" maxlength="100" id="ctl03_txtHeaderEmail" value="E-mail" onfocus="this.value='',this.style.color= '#333'" class="hdrupdteml" title="E-mail address for updates" /><br /></td>
                 <td><input name="ctl03$txtHeaderZip" type="text" maxlength="5" id="ctl03_txtHeaderZip" value="ZIP" onfocus="this.value='',this.style.color= '#333'" class="hdrupdtzip" title="ZIP code for updates" /><br /></td>
-                <td><input type="image" name="ctl03$btnGetUpdates" id="ctl03_btnGetUpdates" class="hdrupdtbtn" title="Get updates" src="<?php // print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/btn-get-updates.gif" alt="Get updates" style="border-width:0px; height:21px;width:102px;background: #fff url('<?php // print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/loading.gif') 50% 50% no-repeat;" onclick="PleaseWaitImageButton(this);"/><br /></td>
+                <td><input type="image" name="ctl03$btnGetUpdates" id="ctl03_btnGetUpdates" class="hdrupdtbtn" title="Get updates" src="<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/btn-get-updates.gif" alt="Get updates" style="border-width:0px; height:21px;width:102px;background: #fff url('<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/loading.gif') 50% 50% no-repeat;" onclick="PleaseWaitImageButton(this);"/><br /></td>
             </tr>
         </table> </div>
     -->
@@ -197,7 +197,7 @@
     <tbody>
       <tr>
       <td><input name="ctl10$txtboxSearch" type="text" maxlength="100" id="ctl10_txtboxSearch" title="Search terms" class="srchbx" /><br /></td>
-      <td><input type="image" name="ctl10$btnSearch" id="ctl10_btnSearch" title="Search" class="srchbtnwh" src="<?php // print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/btn-searchwh.gif" alt="Search" style="border-width:0px;" /><br /></td>
+      <td><input type="image" name="ctl10$btnSearch" id="ctl10_btnSearch" title="Search" class="srchbtnwh" src="<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/btn-searchwh.gif" alt="Search" style="border-width:0px;" /><br /></td>
       </tr>
     </tbody>
   </table>
@@ -292,7 +292,7 @@
 <div class="subftrwrpr">
     <!-- <div class="subwhgov">
       <a href="<?php // print $front_page; ?>">
-        <img alt="www.whitehouse.gov" src="<?php // print $base_path; ?>/profiles/owh/themes/whitehouse/css/images/eop/sftr-whgov.gif" /> 
+        <img alt="www.whitehouse.gov" src="<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/sftr-whgov.gif" /> 
       </a> 
     </div> -->
   <div class="subftlnks">
