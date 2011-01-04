@@ -1204,6 +1204,7 @@ html.js fieldset.collapsed legend a {
   .view-id-featured_posts .views-row
   {
     margin-bottom: 10px;
+    max-width: 272px;
   }
 
 /** page **/
