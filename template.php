@@ -185,7 +185,7 @@ function whitehouse_preprocess_page(&$vars, $hook) {
   }
 
   // node
-  if ($vars['node']) {
+  if (!empty($vars['node'])) {
     $node = $vars['node'];
     $type = $node->type;
     switch ($type) {
