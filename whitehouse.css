@@ -273,6 +273,30 @@
     padding: 0; 
     border-left: 1px solid #012B5B;
   }
+  #topnav li#agenda
+  { 
+    width: 100px; 
+    padding: 0; 
+    border-left: 1px solid #012B5B;
+  }
+  #topnav li#blog
+  { 
+    width: 90px; 
+    padding: 0; 
+    border-left: 1px solid #012B5B;
+  }
+  #topnav li#resources
+  { 
+    width: 130px; 
+    padding: 0; 
+    border-left: 1px solid #012B5B;
+  }
+  #topnav li#video
+  { 
+    width: 90px; 
+    padding: 0; 
+    border-left: 1px solid #012B5B;
+  }
 
   #navbar
   {
