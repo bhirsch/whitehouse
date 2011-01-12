@@ -209,8 +209,7 @@ function whitehouse_preprocess_page(&$vars, $hook) {
 
     // TODO Temp. Handle blog by line in feature module. 
     case 'blog':
-      dsm($vars);
-      $by = '<div class="blog-by">'. check_plain($vars['node']->field_blog_by[0]['view']) .'</div>';
+      $by = '<div class="blog-by">by '. check_plain($vars['node']->field_blog_by[0]['view']) .'</div>';
       $date = '<div class="blog-date">'. check_markup($vars['node']->field_blog_date[0]['view']) .'</div>';
       $vars['content'] = $by .' '. $date .'<br/>'. $vars['content'];
       break;
