@@ -404,14 +404,9 @@ function whitehouse_id($id) {
 }
 
 /** 
- * 
+ * Add Module Theme and Subtheme CSS.
  */
-/**
- * Add Custom Generated CSS File
- * This file is generated each time the theme settings page is loaded.
- * @todo Test subthemes.
- */
-$custom_css = file_directory_path() .'/subtheme/custom.css';
-if (file_exists($custom_css)) {
-  drupal_add_css($custom_css, 'theme', 'all', TRUE);
+if (module_exists('mtheme') && module_exists('subtheme')) {
+  mtheme_add_css();  
+  subtheme_add_css();  
 }
