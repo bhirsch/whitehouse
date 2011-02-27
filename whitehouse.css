@@ -30,8 +30,6 @@
 /** body **/
   body
   {
-    margin: 0;
-    padding: 10px;
   }
 
   #page
@@ -57,8 +55,6 @@
 
   #logo /* Wrapper for logo */
   {
-    margin: 0 10px 0 0;
-    padding: 0;
   }
 
   #logo-image /* The actual logo image */
@@ -67,21 +63,15 @@
 
   h1#site-name, div#site-name /* The name of the website */
   {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1.3em;
   }
 
   #site-name a:link,
   #site-name a:visited
   {
-    color: #000;
-    text-decoration: none;
   }
 
   #site-name a:hover
   {
-    text-decoration: underline;
   }
 
   #site-slogan /* The slogan (or tagline) of a website */
@@ -90,8 +80,6 @@
 
   #header-blocks /* Wrapper for any blocks placed in the header region */
   {
-    z-index: 200; /** hdrwrpr's z-index is 100, which was breaking sign-up forms in header blocks **/
-    position: relative;
   }
 
 /** main (container for everything else) **/
@@ -106,15 +94,9 @@
 /** content **/
   #content /** three column layout **/
   {
-    float: left;
-    padding: 25px 25px 0 0;
-    width: 430px;
   }
   #content-wide /** two column layout **/
   {
-    float: left; 
-    padding: 25px 25px 0 0;
-    width: 595px;
   }
   #content-front 
   {
@@ -138,14 +120,12 @@
 
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
-    padding-bottom: 0; /* Undo system.css */
   }
 
   h1.title, /* The title of the page */
   h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
   h3.title /* Comment title */
   {
-    margin: 0;
   }
 
   div.messages /* Important messages (status, warning, and error) for the user */
@@ -171,13 +151,10 @@
 
   .help /* Help text on a page */
   {
-    margin: 1em 0;
   }
 
   .more-help-link /* Link to more help */
   {
-    font-size: 0.85em;
-    text-align: right;
   }
 
   #content-area /* Wrapper for the actual page content */
@@ -186,147 +163,30 @@
 
   ul.links /* List of links */
   {
-    margin: 1em 0;
-    padding: 0;
   }
 
   ul.links.inline
   {
-    margin: 0;
-    display: inline;
   }
 
   ul.links li
   {
-    display: inline;
-    list-style-type: none;
-    padding: 0 0.5em;
   }
 
   .pager /* A list of page numbers when more than 1 page of content is available */
   {
-    clear: both;
-    margin: 1em 0;
-    text-align: center;
   }
 
   .pager a, .pager strong.pager-current
   {
-    padding: 0.5em;
   }
 
   .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
   {
-    margin: 1em 0;
   }
 
   #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
   {
-  }
-
-/** navbar **/
-  ul#topnav /** override whitehouse element **/
-  {
-    top: 67px;
-    width: 100%;
-    margin-left: 10px;
-  } 
-
-  /** Primary menu items: Set individual widths by id **/ 
-  #topnav li#about
-  { 
-    width: 100px; 
-    padding: 0;
-  }
-  #topnav li#staff
-  { 
-    width: 100px; 
-    padding: 0;
-  }
-  #topnav li#issues
-  { 
-    width: 100px; 
-    padding: 0;
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#legislation
-  { 
-    width: 175px; 
-    padding: 0;
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#events
-  { 
-    width: 100px; 
-    padding: 0;
-    margin-left: 150px;
-  }
-  #topnav li#news-clips
-  { 
-    width: 150px; 
-    padding: 0;
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#press-releases
-  { 
-    width: 175px; 
-    padding: 0; 
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#agenda
-  { 
-    width: 100px; 
-    padding: 0; 
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#blog
-  { 
-    width: 90px; 
-    padding: 0; 
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#resources
-  { 
-    width: 130px; 
-    padding: 0; 
-    border-left: 1px solid #012B5B;
-  }
-  #topnav li#video
-  { 
-    width: 90px; 
-    padding: 0; 
-    border-left: 1px solid #012B5B;
-  }
-
-  #navbar
-  {
-  }
-
-  #navbar li 
-  {
-    padding: 0;
-  }
-
-  #navbar-inner a
-  {
-    text-transform: uppercase;
-    font-family: Georgia,"Times New Roman",Times,serif; 
-    letter-spacing: 2px;
-    text-align: center;
-    padding-top: 8px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  #navbar-inner a:hover
-  {
-    background-color: white;
-    padding-top: 4px;
-    padding-bottom: 10px;
-    border-top: 3px solid #870100;
-    color: #336699;
-    text-align: center;
   }
 
   #search-box /* Wrapper for the search form */
@@ -344,19 +204,15 @@
 
   #secondary /* Secondary links */
   {
-    font-family: Georgia,"Times New Roman",Times,serif;
   }
   #secondary ul.links
   {
-    margin-bottom: 0;
   }
   #secondary ul.links li
   {
-    border-left: #CCCCCC solid 1px;
   }
   #secondary ul.links li.first
   {
-    border-left: none;
   }
 
 
@@ -382,8 +238,6 @@
 /** footer **/
   #footer .block
   {
-    width: 996px;
-    text-align: center;
   }
 
   #footer-inner
@@ -619,7 +473,6 @@
 
   #left_col .block /* blocks in left column */
   {
-    width: 150px;
   }
 
   .block.region-odd /* Zebra striping for each block in the region */
@@ -914,53 +767,36 @@
   /** whitehouse overrides **/
   .mainbody
   {
-    background: #FAFAFA url(images/bg-main-new.jpg) no-repeat scroll center top;
   }
   
   h3.modttlred
   {
-    color: #880000;
-    font-size: 14px;
-    text-transform: uppercase;
   }
   h3.modttlblue
   {
-    text-transform: uppercase;
   }
 
   /* This is for swsngp module, to make Subject line look consistent. 
      On front page it gets .modttlred. On other pages it's .modttlblue. */
   .region-header .block-crmngp h3.modttlblue  
   {
-    font-size: 14px;
   }
 
 
   h3.modhdgblue
   {
-    font-size: 15px;
-    font-weight: normal;
   }
  
 
 /** originally based on pre-Drupal whitehouse.org inline styles **/
   #left_col  /** three column layout, inside pages**/
   {
-  float: left;
-  padding: 25px 25px 0 20px;
-  width: 155px;
-  line-height: 1.5em;
   }
   #left_col a
   {
-    color: #777777;
-    font-family: Arial,Helvetica,sans-serif;
-    font-weight: normal;
   }
   #left_col div
   {
-    float: none;
-    padding: 1px; 
   }
   #left_col a.active
   {
@@ -969,220 +805,150 @@
 
   #left-sm /** three column layout, front page **/
   {
-    width: 270px;
-    padding-right: 50px;
-    padding-left: 10px;
-    float: left;
   }
 
 
   #center_col /** three column layout **/
   {
-    float: left; 
-    width: 430px;
-    line-height: 1.5em;
   }
   #center-col-wide /** two column layout **/
   {
-    float: left;
-    width: 585px;     
-    padding: 25px 25px 0 20;
-    margin-left: 24px;
   }
   #center-sm 
   {
-    width: 270px;
-    float: left;
   }
   
   #right-col 
   {
-    float: right; 
-    width: 272px; 
-    margin: 0 0 0 40px; 
-    padding: 15px; 
-    background:transparent url(css/assets/templates/right_top_back.gif) no-repeat; 
-    min-height: 400px; 
-    line-height: 1.5em; _
-    margin-left: 20px;
   }
 
   #two-col-container
   {
-    width: 629px;
-    padding-left: 5px; 
-    float: left;
   }
 
   .mod-floatbx 
   {
-    margin:52px 0px 40px 0;
   }
 
 /** views styles ******************************************************************/
+/* CONTINUE HERE */
 
 /** general **/
 
-  .views-row
-  {
-    float: left;  /** this breaks in IE7 */
-    clear: left;
-  }
+.views-row
+{
+}
 
-  table.views-table tr
-  {
-    background: white;
-  }
+table.views-table tr
+{
+}
 
-  .views-field-field-teaser-value
-  {
-    line-height: 1.5em;
-  }
-  
-  .field-content .otherln a:hover
-  {
-    text-decoration: underline;
-  }
+.views-field-field-teaser-value
+{
+}
 
-  .views-field-field-teaser-value 
-  {
-    margin-bottom: 20px;
-  }
+.field-content .otherln a:hover
+{
+}
 
-  .views-field-field-video-url-value
-  {
-    text-align: center;
-  }
+.views-field-field-teaser-value 
+{
+}
 
-  .block .views-field-field-news-org-nid
-  {
-    margin-top 2px;
-    margin-bottom: 2px;
-    font-size: 13px;
-    color: #336699;
-    text-transform: uppercase;
-  }
-  .view-id-featured_posts .dateln
-  {
-    text-transform: uppercase;
-  }
+.views-field-field-video-url-value
+{
+}
+
+.block .views-field-field-news-org-nid
+{
+}
+.view-id-featured_posts .dateln
+{
+}
 
 /** views list pages (/staff, /issues, ) **/
 
-  .list-grp-1
+.list-grp-1
+{
+}
+
+.list-grp-2
   {
-    float: left;
-    padding: 10px 20px 40px 0;
   }
 
-  .list-grp-2
-  {
-    width: 500px; /** This was originally 540px, but it breaks in IE7 above 500. **/
-    margin-left: 95px;
-  }
-
-  h3.bio-list-title
-  {
-    font-size = 200%;
-  }
+h3.bio-list-title
+{
+}
 
 /** views event_list **/ 
-  div.event-list-pic  /** class assigned in output of Views: event_list **/
-  {
-    float: right;
-    padding: 10px;
-  }
+div.event-list-pic  /** class assigned in output of Views: event_list **/
+{
+}
 
-  div.event-list-title /** class assigned in Views: event_list **/
-  {
-    font-family: Georgia,"Times New Roman",Times,serif;
-    font-size: 160%;
-    padding: 5px;
-  }
+div.event-list-title /** class assigned in Views: event_list **/
+{
+}
 
-  div.event-list-teaser /** class assigned in Views: event_list **/
-  {
-    padding: 5px;
-  }
+div.event-list-teaser /** class assigned in Views: event_list **/
+{
+}
 
-  #block-views--exp-events_list-page_1
-  {
-  /*  float: right; */
-  }
+#block-views--exp-events_list-page_1
+{
+/*  float: right; */
+}
 
 /** views events_upcoming **/
 
-  div.view-events-upcoming div.views-row 
-  {
-    margin-bottom: 10px;
-  }
+div.view-events-upcoming div.views-row 
+{
+}
 
-  #edit-submit-events-list
-  {
-   margin: 16px 0 0 0; 
-  }
+#edit-submit-events-list
+{
+}
 
 
 /** views pressreleases_list **/
 
-  .view-pressreleases-list .views-field-title h1 { margin-bottom: 0; margin-top: 20px; }
-  .views-field-field-pr-subhead-value { color: #336699; /* font-family: Georgia,"Times New Roman",Times,serif; */ font-size: 1.2em; }
-  .views-field-field-pr-status-value { font-weight: bold; color: #003366; }
-  .view-pressreleases-list .views-field-field-teaser-value { padding-left: 10px; padding-top: 10px; }
+  .view-pressreleases-list .views-field-title h1 { }
+  .views-field-field-pr-subhead-value {  /* font-family: Georgia,"Times New Roman",Times,serif; */  }
+  .views-field-field-pr-status-value { }
+  .view-pressreleases-list .views-field-field-teaser-value { }
 
 /** views newsclips_list **/
-  .view-newsclips-list .views-field-title h1 
-  { 
-    margin-bottom: 0; 
-  }
+.view-newsclips-list .views-field-title h1 
+{ 
+}
 
-  .view-newsclips-list .views-field-field-teaser-value 
-  { 
-    padding-left: 10px; 
-  }
+.view-newsclips-list .views-field-field-teaser-value 
+{ 
+}
 
-  .view-id-newsclips_list .views-field-field-news-org-nid
-  { 
-    margin-top: 20px;
-    font-size: 120%;
-    color: #003366;
-    text-transform: uppercase;
-  }
+.view-id-newsclips_list .views-field-field-news-org-nid
+{ 
+}
 
-  .views-field-field-newsclip-date-value
-  {
-    padding-bottom: 5px;
-    color: #003366;
-    text-transform: uppercase;
-  }
+.views-field-field-newsclip-date-value
+{
+}
 
 /** content types ***************************************************************/
 
 /** event **/
-  .event-date
-  {
-    color: #336699;
-    font-size: 145%;
-    font-weight: normal;
-    font-family: Georgia,"Times New Roman",Times,serif;
-    margin-bottom: 10px;
-  }
+.event-date
+{
+}
 
-  .event-map
-  {
-    text-align: center;
-    padding: 10px;
-  }
+.event-map
+{
+}
 
 /* page *******************************/
 
-  #page-title
-  {
-    color: #880000;
-    font-size: 195%;
-    font-weight: normal;
-    margin: 0 0 15px;
-  }
+#page-title
+{
+}
 
 
 /*
@@ -1217,95 +983,61 @@ html.js fieldset.collapsed legend a {
 /** recent_posts block **/
   .view-id-recent_posts .dateln
   {
-    text-transform: none;
   }
   .view-id-recent_posts .views-row 
   {
-    margin-bottom: 15px;
   }
 
 /** featured_posts block **/ 
-  .view-id-featured_posts .views-row
-  {
-    margin-bottom: 10px;
-    max-width: 272px;
-  }
+.view-id-featured_posts .views-row
+{
+}
 
 /** page **/
 
-  .hdrttl a
-  {
-    color: #AFAFAF;
-    font-size: 150%;
-    font-variant: small-caps;
-    font-family: Georgia,"Times New Roman",Times,serif;
-    letter-spacing: 1px;
-  }
+.hdrttl a
+{
+}
 
-  div #left .front 
-  {
-    width: 362px;
-  }
+div #left .front 
+{
+}
 
-  div #center .front 
-  {
-    width: 362px;
-  }
+div #center .front 
+{
+}
 
-  .gridwrpr
-  {
-    background:#fff url(css/assets/templates/main_back1.gif) repeat-y top left;
-  } 
+.gridwrpr
+{
+} 
 
-  .gridwrpr-inner
-  { 
-    background:transparent url(css/assets/templates/right_back.gif) repeat-y right;
-  }
-  
+.gridwrpr-inner
+{ 
+}
+
 /** footer_nav region **/
-  .region-footer_nav
-  {
-    margin-left: 20px;    
-    margin-top: 5px;
-  }
+.region-footer_nav
+{
+}
 
-  .region-footer_nav h3.modttlred
-  {
-    color: #666666; 
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
+.region-footer_nav h3.modttlred
+{
+}
 
-  .region-footer_nav div.block-inner
-  {
-    max-width: 155px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.region-footer_nav div.block-inner
+{
+}
 
-  .region-footer_nav .block-inner .modttlblue
-  {
-    color: #666666; 
-    font-family: Arial,Helvetica,sans-serif;
-  }
-  
- .region-footer_nav .block-inner .modhdgblue a
-  {
-    color: #666666; 
-    font-family: Arial,Helvetica,sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-  } 
+.region-footer_nav .block-inner .modttlblue
+{
+}
 
- .region-footer_nav #block-views-newsclips_nav-block_1 .block-inner .field-content a
-  {
-    color: #666666; 
-    font-family: Arial,Helvetica,sans-serif;
-    font-weight: normal;
-    font-size: 115%;
-    line-height: 1.3em;
+.region-footer_nav .block-inner .modhdgblue a
+{
+} 
+
+.region-footer_nav #block-views-newsclips_nav-block_1 .block-inner .field-content a
+{
   } 
   .region-footer_nav #block-views-newsclips_nav-block_1 .block-inner .views-field-nid
   {
