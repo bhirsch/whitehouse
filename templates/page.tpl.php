@@ -238,7 +238,7 @@
         <?php endif; ?>
 
       <?php print $feed_icons; ?>
-      <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+      <?php if (!empty($title)): ?><h1 class="title <?php if (!empty($node)) : print $node->type ."-title node-title" ; endif; ?>" id="page-title"><?php print $title; ?></h1><?php endif; ?>
       <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
       <?php if (!empty($messages)): print $messages; endif; ?>
       <?php if (!empty($help)): print $help; endif; ?>
