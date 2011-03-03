@@ -86,6 +86,8 @@
 //////////////////////////////////////////////////////////////////////////
   $subheader
 //////////////////////////////////////////////////////////////////////////
+  $subheader2                                       ///
+///////////////////////////////////////////////////////
   if($left) $left '  $content_top                   ///  $right
                   '                                 ///
                   '  $content                       ///
@@ -121,7 +123,7 @@
 
 	<div class="bdywrpr">
 
-<!-- start header 996-->
+  <!-- start header 996-->
 
      <?php if ($header): ?>
         <div id="header-blocks" class="region region-header">
@@ -129,66 +131,65 @@
         </div> <!-- /#header-blocks -->
       <?php endif; ?>
 
-<div class="hdrwrpr">
-  <?php if($logo) : ?>
-    <div id="header"><?php print '<a href="'. $front_page .'"><img src="'. $logo .'" /></a>'; ?></div>
-  <?php endif ?>
-  <div class="hdrttl">
-    <a href="<?php print $front_page; ?>"><?php print $site_name ?></a>
-    <br />
-  </div>
-  <div class="hdremblem">
-    <!--
-    <a href="<?php //print $front_page; ?>">
-    <img src="<?php //print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
-    <br />
-    -->
-  </div>
-  <div class="hdrflag">
-    <a href="<?php print $front_page; ?>">
-    <img src="<?php print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/hdr-usa-flag.gif" alt="<?php print $site_name; ?>" /></a>
-    <br />
-  </div>
-  <div class="hdrupdtwrpr">
+      <div class="hdrwrpr">
+        <?php if($logo) : ?>
+          <div id="header"><?php print '<a href="'. $front_page .'"><img src="'. $logo .'" /></a>'; ?></div>
+        <?php endif ?>
+        <div class="hdrttl">
+          <a href="<?php print $front_page; ?>"><?php print $site_name ?></a>
+          <br />
+        </div>
+        <div class="hdremblem">
+          <!--
+          <a href="<?php //print $front_page; ?>">
+          <img src="<?php //print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/clear.gif" alt="" /></a>
+          <br />
+          -->
+        </div>
+        <div class="hdrflag">
+          <a href="<?php print $front_page; ?>">
+          <img src="<?php print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/hdr-usa-flag.gif" alt="<?php print $site_name; ?>" /></a>
+          <br />
+        </div>
+        <div class="hdrupdtwrpr">
+        <!-- Email sign-up form from original whitehouse.gove site
+        <div id="ctl03_pGetUpdates">
+            <table cellspacing="0" cellpadding="0" border="0" title="Get Email Updates Form">
+                <tr>
+                    <td><input name="ctl03$txtHeaderEmail" type="text" maxlength="100" id="ctl03_txtHeaderEmail" value="E-mail" onfocus="this.value='',this.style.color= '#333'" class="hdrupdteml" title="E-mail address for updates" /><br /></td>
+                    <td><input name="ctl03$txtHeaderZip" type="text" maxlength="5" id="ctl03_txtHeaderZip" value="ZIP" onfocus="this.value='',this.style.color= '#333'" class="hdrupdtzip" title="ZIP code for updates" /><br /></td>
+                    <td><input type="image" name="ctl03$btnGetUpdates" id="ctl03_btnGetUpdates" class="hdrupdtbtn" title="Get updates" src="<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/btn-get-updates.gif" alt="Get updates" style="border-width:0px; height:21px;width:102px;background: #fff url('<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/loading.gif') 50% 50% no-repeat;" onclick="PleaseWaitImageButton(this);"/><br /></td>
+                </tr>
+            </table> </div>
+        -->
 
-    <!-- Email sign-up form from original whitehouse.gove site
-    <div id="ctl03_pGetUpdates">
-        <table cellspacing="0" cellpadding="0" border="0" title="Get Email Updates Form">
-            <tr>
-                <td><input name="ctl03$txtHeaderEmail" type="text" maxlength="100" id="ctl03_txtHeaderEmail" value="E-mail" onfocus="this.value='',this.style.color= '#333'" class="hdrupdteml" title="E-mail address for updates" /><br /></td>
-                <td><input name="ctl03$txtHeaderZip" type="text" maxlength="5" id="ctl03_txtHeaderZip" value="ZIP" onfocus="this.value='',this.style.color= '#333'" class="hdrupdtzip" title="ZIP code for updates" /><br /></td>
-                <td><input type="image" name="ctl03$btnGetUpdates" id="ctl03_btnGetUpdates" class="hdrupdtbtn" title="Get updates" src="<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/eop/btn-get-updates.gif" alt="Get updates" style="border-width:0px; height:21px;width:102px;background: #fff url('<?php // print $base_path; ?>/profiles/civic/themes/whitehouse/css/images/loading.gif') 50% 50% no-repeat;" onclick="PleaseWaitImageButton(this);"/><br /></td>
-            </tr>
-        </table> </div>
-    -->
+      <!-- secondary links -->
+      <?php if ($secondary_links): ?>
+        <div id="secondary" class="clear-block">
+          <?php print theme('links', $secondary_links); ?>
+        </div> <!-- /#secondary -->
+      <?php endif; ?>
 
-  <!-- secondary links -->
-  <?php if ($secondary_links): ?>
-    <div id="secondary" class="clear-block">
-      <?php print theme('links', $secondary_links); ?>
-    </div> <!-- /#secondary -->
-  <?php endif; ?>
+      </div><!-- /hdrupdtwrpr -->
 
-  </div><!-- /hdrupdtwrpr -->
+      <!-- primary links -->
+      <div id='navbar'><div id='navbar-inner'>
+      <?php print theme('links', $primary_links, array('class' => 'links primary-links', 'id' => 'topnav'), TRUE); ?>
+      </div></div><!-- /navbar /navbar-inner -->
 
-  <!-- primary links -->
-  <div id='navbar'><div id='navbar-inner'>
-  <?php print theme('links', $primary_links, array('class' => 'links primary-links', 'id' => 'topnav'), TRUE); ?>
-  </div></div><!-- /navbar /navbar-inner -->
+    </div><!-- /.hdrwrpr -->
+    <!-- end header -->
 
-</div>
-<!-- end header -->
+    <!-- sub header 996 -->
+      <?php if ($subheader): ?>
+        <div id="subheader" class="region region-subheader clear-block">
+          <?php print $subheader; ?>
+        </div> <!-- /#subheader -->
+      <?php endif; ?>
 
-<!-- sub header 996 -->
-  <?php if ($subheader): ?>
-    <div id="subheader" class="region region-subheader clear-block">
-      <?php print $subheader; ?>
-    </div> <!-- /#subheader -->
-  <?php endif; ?>
-
-<!-- <div class="subhdrwrpr"> -->
-  <!-- mod-searchint332 -->
-  <!-- <div id="ctl10_pnlSearch" class="mod-searchint332" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl10_btnSearch')"><?php // print $search_box; ?>[SEARCH BOX HERE]
+      <!-- <div class="subhdrwrpr"> -->
+        <!-- mod-searchint332 -->
+        <!-- <div id="ctl10_pnlSearch" class="mod-searchint332" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl10_btnSearch')"><?php // print $search_box; ?>[SEARCH BOX HERE]
 
 
   <table border="0" cellpadding="0" cellspacing="0" title="Site Search Form">
@@ -216,6 +217,15 @@
 <!-- start grid 996-->
 <div id="grid-996" class="gridwrpr">
   <!-- <div class="gridwrpr-inner"> -->
+
+  <div id="two-col-container">  
+
+    <!-- two column subheader-->
+      <?php if ($subheader2): ?>
+        <div id="subheader2" class="region region-subheader2 clear-block">
+          <?php print $subheader2; ?>
+        </div> <!-- /#subheader@ -->
+      <?php endif; ?>
 
   <?php if($left) : ?>
   <div id="<?php print $left_id ?>">
@@ -263,16 +273,20 @@
 
   </div><!-- style=background:transparent... -->
 
+  </div><!-- /#two-col-container -->
+
 <div id="right-col">
     <div>
 		<!-- right sidebar-->
 		<?php print $right; ?>
 		<!-- /right sidebar-->
     </div>
+  <div class="clear">&nbsp;</div>
 
-				</div>
-				<div class="clear">&nbsp;</div>
   <!-- </div>  --><!-- end gridwrpr-inner -->
+  </div>
+
+
 </div><!-- end grid -->
 
 <!-- start footer 996-->

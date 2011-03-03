@@ -1009,11 +1009,15 @@
 
   #two-col-container
   {
-    width: 629px;
+    width: 635px;
     padding-left: 5px; 
     float: left;
   }
 
+  #subheader2
+  {
+    width: 629px;
+  }
   .mod-floatbx 
   {
     margin:52px 0px 40px 0;

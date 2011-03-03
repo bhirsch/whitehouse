@@ -184,6 +184,8 @@ function whitehouse_preprocess_page(&$vars, $hook) {
     }
   }
 
+  // @todo Did something change here? This function seems to always
+  //   return false. BH 3/2/11.
   // node
   if (!empty($vars['node'])) {
     $node = $vars['node'];
@@ -226,9 +228,8 @@ function whitehouse_preprocess_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* --Delete this line to use this function 
+/* 
 function whitehouse_preprocess_node(&$vars, $hook) {
-  // $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
