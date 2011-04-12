@@ -184,13 +184,19 @@ function whitehouse_preprocess_page(&$vars, $hook) {
     }
   }
 
-  // @todo Did something change here? This function seems to always
-  //   return false. BH 3/2/11.
   // node
   if (!empty($vars['node'])) {
     $node = $vars['node'];
     $type = $node->type;
     switch ($type) {
+
+    case 'issue':
+      if (module_exists('issues_logo')) {
+        if ($logo = $node->field_issue_logo[0]['filepath']) {
+          $vars['logo'] = '/' . $logo;
+        }
+      }
+      break;
 
     case 'bio': // Bio (Biography) content type (Staff pages)
       // $title
